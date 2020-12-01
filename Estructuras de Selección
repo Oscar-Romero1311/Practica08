@@ -1,0 +1,101 @@
+//Algoritmo (Viaje Alumnos)
+#include<stdio.h>
+ int main(){
+ 	float numAlumnos;
+ 	float costoAlumno;
+ 	float costoAutobus;
+ 	printf("Ingrese la cantidad de alumnos que viajaran:");
+ 	scanf("%d",&numAlumnos);
+ 	if(numAlumnos>=100){
+ 		costoAlumno=65;
+		printf("El costo por alumno es de:\n %f",costoAlumno);
+	}
+		if(55<=numAlumnos<=99){
+			costoAlumno=70;
+			printf("El costo por alumno es de:\n %f",costoAlumno);
+		}
+			if(30<=numAlumnos<=49){
+				costoAlumno=95;
+				printf("El costo por alumno es de:\n %f",costoAlumno);
+			}
+	else{ 
+		numAlumnos<30;
+		costoAutobus=4000;
+		printf("El costo del autobus por menos de 30 alumnos es:\n %f",costoAutobus);
+	}
+	return 0;
+	
+ }
+
+//Algoritmo (Cantidad mayor)
+#include<stdio.h>
+ int main(){
+	float variable1;
+	float variable2;
+	float variable3;
+	printf("Digita la primera cantidad:");
+	scanf("%f",&variable1);
+	printf("Digita la segunda cantidad:");
+	scanf("%f",&variable2);
+	printf("Digita la tercera cantidad:");
+	scanf("%f",&variable3);
+	if (variable1>variable2){
+		if(variable1>variable3){
+			printf("La cantidad mayor es:\n %f",variable1);
+		}
+	}
+	if(variable2>variable1){
+		if(variable2>variable3){
+			printf("La cantidad mayor es:\n %f",variable2);
+		}
+	}
+	if(variable3>variable1){
+		if(variable3>variable2){
+			printf("La cantidad mayor es:\n %f",variable3);
+		}
+	}
+	return 0;
+	
+ }
+ 
+ 
+ //Algoritmo (Precio de lapices)
+#include<stdio.h>
+ int main(){
+ 	int numeroDeLapices=0;
+ 	float operacion;
+ 	printf("Ingrese el numero de lápices que se comprarán");
+ 	scanf("%d",&numeroDeLapices);
+ 	if(numeroDeLapices>=1000){
+ 		operacion=numeroDeLapices*0.85;
+ 		printf("El total a pagar es:\n %f",operacion);
+	 }
+	else{
+		operacion=numeroDeLapices*0.90;
+		printf("El total a pagar es:\n %f",operacion);
+	}
+	return 0;
+ }
+
+//Algoritmo (descuentos almacen)
+#include<stdio.h>
+ int main(){
+ 	int precioDelTraje;
+ 	float descuento;
+ 	printf("Digita el precio del traje:");
+ 	scanf("%d",&precioDelTraje);
+ 	if(precioDelTraje>2500){
+ 		descuento=(-precioDelTraje*0.15)+precioDelTraje;
+ 		printf("El precio final del traje es de:\n %f",descuento);
+	 }
+	else{
+		descuento=(-precioDelTraje*0.08)+precioDelTraje;
+		printf("El precio final del traje es de:\n %f",descuento);
+	}
+	return 0;
+ }
+ 
+ 
+ 
+ 
+ 
